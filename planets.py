@@ -73,7 +73,7 @@ class Planets(PygameHelper):
         for p in self.planets:
             for s in self.stars:
                 d = s.pos - p.pos
-                g = gravity(p.mass * (10 ** 5), s.mass * (10 ** 7), d.length)
+                g = gravity(p.mass * (10 ** 5), s.mass * (10 ** 7.25), d.length)
                 d.length = g
                 p.vel += d
                 nxt = p.pos + p.vel
